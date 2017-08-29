@@ -1,0 +1,13 @@
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+.col {
+	background:yellow;
+	border:2px solid black;
+}
+
+h6 {
+	color:white;
+	text-align: center;	
+}
