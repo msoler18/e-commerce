@@ -31,23 +31,15 @@ h6 {
 	border:2px solid black;
 }
 
-.product1{
+.product{
 	width: auto;
 	height: 400px;
 	background-color: red;
 	border:1px solid black;
 }
 
-.product2{
-	width: auto;
-	height: 400px;
-	background-color: green;
-	border:1px solid black;
-}
-
-.product3{
-	width: auto;
-	height: 400px;
-	background-color: brown;
-	border:1px solid black;
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
