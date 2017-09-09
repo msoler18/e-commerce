@@ -24,15 +24,18 @@ h6 {
 	border:2px solid black;
 }
 
-.product{
-	width: auto;
-	height: 400px;
-	background-color: red;
-	border:1px solid black;
+.products{
+	border:1px solid red;
 }
 
 .container{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+}
+
+.card-columns {
+  @include media-breakpoint-only(sm) {
+    column-count: 2;
+  }
 }
