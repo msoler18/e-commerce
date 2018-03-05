@@ -5,7 +5,7 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/open-iconic/font/css/open-iconic-bootstrap.min.css">
-		<script src="https://use.fontawesome.com/9a5e41000b.js"></script>
+		<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	</head>
 	<body>
@@ -41,7 +41,7 @@
 							</div>
 						</div>
 					<h5>Categorías</h5>
-					<ul class="list-group hidden-md-down">
+					<ul class="list-group">
 						<li class="list-group-item justify-content-between list-group-item-action active">
 							Todos
 							<span class="badge badge-default float-right">140</span>
@@ -117,8 +117,8 @@
 										<div class="card-body">
 											<h4 class="card-title">Hipster Ultimate</h4>
 											<p class="card-text">La camiseta ideal para hipsters</p>
-											<a href="#" class="btn btn-primary"><i class="fa fa-cart-plus" aria-hidden="true"></i> $229</a>
-											<a href="#modal" class="btn btn-secondary"><i class="fa fa-arrows-alt"></i> Detalles</a>
+											<button type="button" class="btn btn-primary"><i class="fa fa-cart-plus" aria-hidden="true"></i> $229</button>
+											<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#hipsterModal"><i class="fa fa-arrows-alt"></i> Detalles</button>
 										</div>
 									</div>
 									<div class="card">
@@ -126,8 +126,8 @@
 										<div class="card-body">
 											<h4 class="card-title">On Motion Love</h4>
 											<p class="card-text">Perfecta para salidas rocossas.</p>
-											<a href="#" class="btn btn-primary"><i class="fa fa-cart-plus" aria-hidden="true"></i> $229</a>
-											<a href="#modal" class="btn btn-secondary"><i class="fa fa-arrows-alt"></i> Detalles</a>
+											<button type="button" class="btn btn-primary"><i class="fa fa-cart-plus" aria-hidden="true"></i> $229</button>
+											<button type="button" class="btn btn-secondary"><i class="fa fa-arrows-alt"></i> Detalles</button>
 										</div>
 									</div>
 									<div class="card">
@@ -135,8 +135,8 @@
 										<div class="card-body">
 											<h4 class="card-title">Underground Max</h4>
 											<p class="card-text">Ideal para Underground</p>
-											<a href="#" class="btn btn-primary"><i class="fa fa-cart-plus" aria-hidden="true"></i> $229</a>
-											<a href="#modal" class="btn btn-secondary"><i class="fa fa-arrows-alt"></i> Detalles</a>
+											<button type="button" class="btn btn-primary"><i class="fa fa-cart-plus" aria-hidden="true"></i> $229</button>
+											<button type="button" class="btn btn-secondary"><i class="fa fa-arrows-alt"></i> Detalles</button>
 										</div>
 									</div>
 									<div class="card">
@@ -144,8 +144,8 @@
 										<div class="card-body">
 											<h4 class="card-title">Flame</h4>
 											<p class="card-text">Ideal para fiestas.</p>
-											<a href="#" class="btn btn-primary"><i class="fa fa-cart-plus" aria-hidden="true"></i> $229</a>
-											<a href="#modal" class="btn btn-secondary"><i class="fa fa-arrows-alt"></i> Detalles</a>
+											<button type="button" class="btn btn-primary"><i class="fa fa-cart-plus" aria-hidden="true"></i> $229</button>
+											<button type="button" class="btn btn-secondary"><i class="fa fa-arrows-alt"></i> Detalles</button>
 										</div>
 									</div>
 									<div class="card">
@@ -153,8 +153,8 @@
 										<div class="card-body">
 											<h4 class="card-title">Flame Black</h4>
 											<p class="card-text">Ideal para citas.</p>
-											<a href="#" class="btn btn-primary"><i class="fa fa-cart-plus" aria-hidden="true"></i> $229</a>
-											<a href="#modal" class="btn btn-secondary"><i class="fa fa-arrows-alt"></i> Detalles</a>
+											<button type="button" class="btn btn-primary"><i class="fa fa-cart-plus" aria-hidden="true"></i> $229</button>
+											<button type="button" class="btn btn-secondary"><i class="fa fa-arrows-alt"></i> Detalles</button>
 										</div>
 									</div>
 
@@ -165,8 +165,72 @@
 				</div>
 			</div>
 		</section>
+		<!-- Modal -->
+		<div class="modal fade" id="hipsterModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Hipster Ultimate</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <div class="alert alert-primary" role="alert">
+		        	Este producto está agotado.
+		        </div>
+		        <div class="container">
+		        	<div class="row">
+		        		<div class="col-12 col-md-6">
+		        			<img src="css/images/products/camiseta-1.jpg" alt="Hipster">
+		        		</div>
+		        		<div class="col-12 col-md-6">
+		        			Precio:<strong>$299</strong><br>
+		        			Calificación:<span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></span>
+		        			<span class="badge badge-warning">Hipster</span> <span class="badge badge-secondary">Deportiva</span>
+							<div style="color:#2F78B9; font-size: 15px;"><a href="#"><p><i class="fas fa-heart"></i>Agregar a los deseos</p></a></div>
+		        		</div>
+		        	</div>
+		        	<div class="row">
+		        		<div class="col-12">
+		        				<nav>
+								  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+								    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Describción</a>
+								    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Comentarios</a>
+								  </div>
+								</nav>
+								<div class="tab-content" id="nav-tabContent">
+								  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. </div>
+								  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+								  		<div class="card">
+											  <div class="card-header">
+											      Germán Escobar comentó hace 2 días.
+											  </div>
+											  <div class="card-body">
+											    <p class="card-text">Esta camiseta está increible, la quiero!</p>
+											  </div>
+											</div> 	
+								  		<div class="form-group mt-3">
+								    		<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Ingresa tu comentario"></textarea>
+								    		<a href="#" class="btn btn-primary">Comentar</a>
+										</div>
+								  </div>
+								</div>
+							  </div>
+							</div>
+		        		</div>
+		        	</div>
+		        </div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary">Save changes</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>	
 	</body>	
-	<!--jquery Hosted-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
 </html>
